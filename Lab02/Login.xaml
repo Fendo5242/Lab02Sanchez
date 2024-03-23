@@ -1,0 +1,25 @@
+﻿<Window x:Class="Lab02.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab02"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <StackPanel Height="250" Width="300" Background="SkyBlue" Margin="50" HorizontalAlignment="Center">
+                <Label HorizontalAlignment="Center" FontSize="30" FontFamily="Consolas" FontStyle="Oblique" Foreground="White" FontWeight="Bold">LOGIN</Label>
+                <Label HorizontalAlignment="Center">Usuario: </Label>
+                <TextBox Width="200" x:Name="Usuario"></TextBox>
+                <Label HorizontalAlignment="Center">Contraseña:</Label>
+                <TextBox Width="200" x:Name="Contraseña"></TextBox>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
+                    <Button Width="100" Height="30" Margin="5" Click="Button_Click_1" Background="GreenYellow" FontWeight="Bold">Login</Button>
+                    <Button Width="100" Height="30" Margin="5" Click="Button_Click_2" Background="Red" FontWeight="Bold" Foreground="White">Salir</Button>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
